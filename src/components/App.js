@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import AppRouter from "./Router";
 import {firebaseAuth} from '../firebase'
+import Loading from './Loading'
 
 function App() {
   //const auth = firebase.auth();
@@ -20,8 +21,8 @@ function App() {
   },[])
   return (
     <>
-      {init ? <AppRouter isLoggedIn = {isLoggedIn} /> : 'firebase initializing..'}
-      <footer>copyright &copy; {new Date().getFullYear()} Eunji Lee. All rights reserved </footer>
+      {init ? <AppRouter isLoggedIn = {isLoggedIn} /> : <Loading />}
+
     </>
   );
 }

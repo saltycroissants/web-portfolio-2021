@@ -32,6 +32,19 @@ html,body{
     top: 105px;
     border-radius: 90px;
     background: #E7EFF5;
+    color: #181818;
+    text-decoration: none;
+}
+.githubButton:hover{
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    left: 863px;
+    top: 105px;
+    border-radius: 90px;
+    background: #181818;
+    color: #E7EFF5;
+    text-decoration: none;
 }
 .githubText{
     position : relative;
@@ -43,13 +56,9 @@ html,body{
     line-height: 43px;
     text-align: center;
     padding : auto;
-
-    color: #181818;
-
 }
 .contactButton{
     position: absolute;
-    height: 165px;
     left: 1116px;
     top: 229px;
 }
@@ -66,6 +75,7 @@ html,body{
     z-index: 15;
     color: #181818;
 }
+
 .underlineBox{
     position: relative;
     width: 242px;

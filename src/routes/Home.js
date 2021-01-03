@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from './css/Home.module.css'
 import BorderSubtractive from '../components/GridBorder'
 
+
+
 const Home = () => {
+    const [isHover, setHover] = useState(false);
+    let context = "contact me";
+    if(isHover == true){context = "now !"}
+
     return (
         <div className = {styles.container}>
             <div className = {styles.gridContainer}>
@@ -14,15 +20,17 @@ const Home = () => {
                     <div className = {styles.logoText}>Eunji Lee</div>
                 </div>
 
-                <div className = {styles.githubButton}>
+                <a href = "https://github.com/saltycroissants" className = {styles.githubButton}
+                >
                     <div className = {styles.githubText}>github</div>
-                </div>
+                </a>
 
                 <div className = {styles.contactButton}>
                     <div className = {styles.underlineBox}></div>  
-                    <div className = {styles.contactText}>contact me</div>
-                 
-
+                    <div className = {styles.contactText} 
+                    onMouseEnter = {() => setHover(true)}
+                    onMouseLeave = {() => setHover(false)}
+                    >{context}</div>
                 </div>
 
                 <div className={styles.textBox}>

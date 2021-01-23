@@ -2,12 +2,10 @@ import React, {useState} from 'react'
 import styles from './css/Home.module.css'
 import BorderSubtractive from '../components/GridBorder'
 
-
-
 const Home = () => {
     const [isHover, setHover] = useState(false);
     let context = "contact me";
-    if(isHover == true){context = "now !"}
+    if(isHover === true){context = "now !"}
 
     return (
         <div className = {styles.container}>
@@ -37,6 +35,12 @@ const Home = () => {
                     <div className = {styles.text}>DEVELOPER</div>
                     <div className = {styles.text}>BASED IN</div>
                     <div className = {styles.text}>SEOUL, KOREA</div>
+                </div>
+                <div className ={styles.bottomTab}>
+                    <div className = {styles.bottomTabText}>ABOUT ME</div>
+                    <div className = {styles.bottomTabText}>PROJECTS</div>
+                    <div className = {styles.bottomTabText}>BLOG</div>
+                    <div className = {styles.bottomTabText}>YOUTUBE</div>
                 </div>
                 
                 {/*}

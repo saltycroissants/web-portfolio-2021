@@ -100,7 +100,7 @@ html,body{
     position: absolute;
     width: 670px;
     height: 254px;
-    top: 344px;
+    top: 300px;
 }
 .logoText{
     font-family: Acumin Pro Wide;
@@ -133,4 +133,16 @@ html,body{
     line-height: 29px;
     color: #181818;
     margin-right : 45px;
+    text-decoration: none;
+}
+.bottomTabText:hover{
+    font-family: Acumin Pro Wide;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: #181818;
+    color: #E7EFF5;
+    margin-right : 45px;
+    text-decoration: none;
 }

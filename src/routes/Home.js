@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import styles from './css/Home.module.css'
 import BorderSubtractive from '../components/GridBorder'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [isHover, setHover] = useState(false);
@@ -10,7 +11,7 @@ const Home = () => {
     return (
         <div className = {styles.container}>
             <div className = {styles.gridContainer}>
-                    <BorderSubtractive />
+                    <BorderSubtractive backgroundColor = '#FFF' borderColor = '#9FBFD6'/>
             </div>
             <div className = {styles.innerContainer}>
                 <div className= {styles.logoBox}>
@@ -37,9 +38,9 @@ const Home = () => {
                     <div className = {styles.text}>SEOUL, KOREA</div>
                 </div>
                 <div className ={styles.bottomTab}>
-                    <div className = {styles.bottomTabText}>ABOUT ME</div>
-                    <div className = {styles.bottomTabText}>PROJECTS</div>
-                    <div className = {styles.bottomTabText}>BLOG</div>
+                    <Link to = "/aboutme" className = {styles.bottomTabText}>ABOUT ME</Link>
+                    <Link to = "/projects" className = {styles.bottomTabText}>PROJECTS</Link>
+                    <a href="https://eunji-lee.tistory.com/" className = {styles.bottomTabText}>BLOG</a>
                     <div className = {styles.bottomTabText}>YOUTUBE</div>
                 </div>
                 

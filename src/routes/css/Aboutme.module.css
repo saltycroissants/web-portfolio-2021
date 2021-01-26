@@ -32,9 +32,51 @@ html,body{
     font-size: 18px;
     line-height: 22px;
 }
+
 .logoBox{
     position: absolute;
     width: 105px;
     height: 43px;
     top: 75px;
+    text-decoration: none;
+    
+}
+.logoBox:visited{
+    color : black;
+    text-decoration: none;
+}
+.title{
+    position: absolute;
+    width: 242px;
+    height: 41px;
+    top: 197px;
+
+    font-family: Acumin Pro Wide;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #181818;
+}
+.intro{
+    position: absolute;
+    width: 849px;
+    height: 78px;
+    top: 268px;
+
+    font-family: Acumin Pro Wide;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #181818;
+}
+.profile{
+    position: absolute;
+    max-width: 300px;
+    top: 73px;
+    right : 120px;
+
 }

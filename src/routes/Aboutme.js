@@ -1,20 +1,30 @@
 import React from 'react'
 import styles from './css/Aboutme.module.css'
 import BorderSubtractive from '../components/GridBorder'
+import { Link } from 'react-router-dom';
+import profilepic from '../assets/profilepic.png'
+
 
 const Aboutme = () => {
     return (
         <>
             <div className= {styles.container}>
                 <div className = {styles.gridContainer}>
-                        <BorderSubtractive backgroundColor ='#E7EFF5' borderColor = '#9FBFD6'/>
+                        <BorderSubtractive backgroundColor ='#E7EFF5' borderColor = '#FFF'/>
                 </div>
                 <div className = {styles.innerContainer}>
-                    <div className= {styles.logoBox}>
+                    <Link to = "/" className= {styles.logoBox}>
                         <div className = {styles.logoText}>Portfolio of</div>
                         <div className = {styles.logoText}>Eunji Lee</div>
+                    </Link>
+                    <div className = {styles.title}>ABOUT ME</div>
+                    <div className={styles.intro}>
+                    Hello. My name is Eunji.<br></br>
+                    I develop softwares, aim to change lives. 
                     </div>
-                    <div>about me</div>
+                    <div>
+                        <img className={styles.profile} src= {profilepic} alt="profile"/>
+                    </div>
                 </div>
             </div>
         </>

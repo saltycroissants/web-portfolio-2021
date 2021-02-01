@@ -26,10 +26,10 @@ const Home = () => {
 
                 <div className = {styles.contactButton}>
                     <div className = {styles.underlineBox}></div>  
-                    <div className = {styles.contactText} 
+                    <Link to = "/emailform" className = {styles.contactText} 
                     onMouseEnter = {() => setHover(true)}
                     onMouseLeave = {() => setHover(false)}
-                    >{context}</div>
+                    >{context}</Link>
                 </div>
 
                 <div className={styles.textBox}>

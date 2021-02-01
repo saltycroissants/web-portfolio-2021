@@ -75,6 +75,7 @@ html,body{
     top : 0;
     z-index: 15;
     color: #181818;
+    text-decoration: none;
 }
 
 .underlineBox{

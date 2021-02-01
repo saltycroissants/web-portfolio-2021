@@ -4,6 +4,7 @@ import Auth from '../routes/Auth';
 import Home from '../routes/Home';
 import Aboutme from '../routes/Aboutme';
 import Project from '../routes/Project'
+import Form from '../components/Form'
 
 const AppRouter = ({isLoggedIn}) => {
     
@@ -15,6 +16,8 @@ const AppRouter = ({isLoggedIn}) => {
             </Switch>
             <Route path = "/aboutme" exact={true} component = {Aboutme}></Route>
             <Route path = "/projects" exact={true} component = {Project}></Route>
+            <Route path = "/emailform" exact={true} component = {Form}></Route>
+
         </Router>
     )
 }

@@ -38,13 +38,13 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         console.log("handleSubmit");
-        const templateId = 'template_m581rkq';
+        const templateId = process.env.REACT_APP_EMAILJS_TEMPLATEID;
 
         const sendFeedback = (templateId, templateParams) => {
-            const serviceId = 'service_ybmoq6e';
-            const USER_ID = 'user_X1bf8J0b9UvFlwEKWfWyG'
+            const serviceId = process.env.REACT_APP_EMAILJS_SERVICEID
+            const userId = process.env.REACT_APP_EMAILJS_USERID
     
-            emailjs.send(serviceId, templateId, templateParams, USER_ID)
+            emailjs.send(serviceId, templateId, templateParams, userId)
             .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             }, function(err) {

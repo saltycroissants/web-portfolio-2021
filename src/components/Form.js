@@ -1,11 +1,13 @@
-import React , {useState, useEffect}from 'react'
+import React , {useState}from 'react'
 import emailjs from 'emailjs-com';
+import styles from './css/Form.module.css'
 
 
 const Form = () => {
     const [feedback, setFeedback] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    //const [isSubmit, setSubmit] =useState(false);
 
 
     const handleChange = (e) => {
@@ -24,7 +26,14 @@ const Form = () => {
         console.log("handleemail");
         //console.log(feedback);
         setEmail(e.target.value);
+        handleValidation();
+
+        
      }
+
+    const handleValidation = () => {
+        console.log('validation for email needed');
+    }
 
 
     const handleSubmit = (e) => {
@@ -33,8 +42,9 @@ const Form = () => {
 
         const sendFeedback = (templateId, templateParams) => {
             const serviceId = 'service_ybmoq6e';
+            const USER_ID = 'user_X1bf8J0b9UvFlwEKWfWyG'
     
-            emailjs.send(serviceId, templateId, templateParams)
+            emailjs.send(serviceId, templateId, templateParams, USER_ID)
             .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             }, function(err) {
@@ -49,14 +59,16 @@ const Form = () => {
             to_name : 'eunji'
         } 
         sendFeedback(templateId, submitParams);
-        
+        alert("email submitted!");
+        window.location= '/';
+      
      }
 
 
     return (
         <>
-            <form>
-                <div>it works</div>
+            <form className = {styles.container}>
+                <div className ={styles.title}>SEND ME AN EMAIL</div>
                 <div>
                     <textarea
                         id="name-input"
@@ -65,7 +77,7 @@ const Form = () => {
                         placeholder="your name, please"
                         required
                         value={name}
-                        style={{width: '100%', height: '50px'}}
+                        style={{width: '100%', height: '30px'}}
                     />
                 </div>
 
@@ -77,7 +89,7 @@ const Form = () => {
                         placeholder="your email, please"
                         required
                         value={email}
-                        style={{width: '100%', height: '50px'}}
+                        style={{width: '100%', height: '30px'}}
                     />
                 </div>
                 
@@ -86,10 +98,10 @@ const Form = () => {
                         id="test-mailing"
                         name="test-mailing"
                         onChange={handleChange}
-                        placeholder="contact me via mail 😄"
+                        placeholder="write here😄"
                         required
                         value={feedback}
-                        style={{width: '100%', height: '50px'}}
+                        style={{width: '100%', height: '200px'}}
                     />
                 </div>
                 <input type="button" value="Submit" className="btn btn--submit" onClick={handleSubmit} />

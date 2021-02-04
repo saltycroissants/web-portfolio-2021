@@ -1,23 +1,18 @@
 import React from 'react'
-import {HashRouter as Router, Route, Switch} from "react-router-dom"
-import Auth from '../routes/Auth';
+import {HashRouter as Router, Route} from "react-router-dom"
 import Home from '../routes/Home';
 import Aboutme from '../routes/Aboutme';
 import Project from '../routes/Project'
 import Form from '../components/Form'
 
-const AppRouter = ({isLoggedIn}) => {
+const AppRouter = () => {
     
     return (
         <Router>
-            <Switch>
-                {isLoggedIn ? (<Route exact path = "/"> <Home/> </Route>) 
-                : (<Route exact path = "/"> <Auth/> </Route>)}
-            </Switch>
+            <Route exact path = "/"> <Home/></Route>
             <Route path = "/aboutme" exact={true} component = {Aboutme}></Route>
             <Route path = "/projects" exact={true} component = {Project}></Route>
             <Route path = "/emailform" exact={true} component = {Form}></Route>
-
         </Router>
     )
 }

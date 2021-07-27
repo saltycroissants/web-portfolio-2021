@@ -32,8 +32,8 @@ html,body{
     left: 863px;
     top: 105px;
     border-radius: 90px;
-    background: #E7EFF5;
-    color: #181818;
+    background: #FF8A1E;
+    color: #333333;
     text-decoration: none;
 }
 .githubButton:hover{
@@ -43,14 +43,14 @@ html,body{
     left: 863px;
     top: 105px;
     border-radius: 90px;
-    background: #181818;
-    color: #E7EFF5;
+    background: #333333;
+    color: #FF8A1E;
     text-decoration: none;
 }
 .githubText{
     position : relative;
     top: 58px;
-    font-family: Acumin Pro Wide;
+    font-family: acumin-pro-wide, sans-serif;
     font-style: italic;
     font-weight: 300;
     font-size: 36px;
@@ -64,17 +64,17 @@ html,body{
     top: 229px;
 }
 .contactText{
-    font-family: Acumin Pro Wide;
+    font-family: acumin-pro-wide, sans-serif;
     font-style: italic;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 36px; 
     line-height: 43px;
     text-align: right;
 
     position : relative;
     top : 0;
     z-index: 15;
-    color: #181818;
+    color: #333333;
     text-decoration: none;
 }
 
@@ -84,17 +84,17 @@ html,body{
     height: 34px;
     top: 54px;
     z-index: 11;
-    background: #E7EFF5;
+    background: #FF8A1E;
 }
 
 .text{
-    font-family: Acumin Pro Wide;
+    font-family: acumin-pro-wide, sans-serif;
     font-style: italic;
     font-weight: 900;
     font-size: 4.5rem;
     line-height: 86px;
     
-    color: #181818; 
+    color: #333333; 
 }
 
 .textBox{
@@ -104,7 +104,7 @@ html,body{
     top: 300px;
 }
 .logoText{
-    font-family: Acumin Pro Wide;
+    font-family: acumin-pro-wide, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -127,23 +127,23 @@ html,body{
 }
 
 .bottomTabText{
-    font-family: Acumin Pro Wide;
+    font-family: acumin-pro-wide, sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
-    color: #181818;
+    color: #333333;
     margin-right : 45px;
     text-decoration: none;
 }
 .bottomTabText:hover{
-    font-family: Acumin Pro Wide;
+    ffont-family: acumin-pro-wide, sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
-    background-color: #181818;
-    color: #E7EFF5;
+    background-color: #333333;
+    color: #FF8A1E;
     margin-right : 45px;
     text-decoration: none;
 }

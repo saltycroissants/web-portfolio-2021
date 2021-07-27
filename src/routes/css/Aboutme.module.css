@@ -74,8 +74,11 @@ html,body{
 }
 .profile{
     position: absolute;
-    max-width: 300px;
-    top: 73px;
-    right : 120px;
-
+    max-width: 220px;
+    top: 197px;
+    left : 55%;
+  
+    background-color: #FF9C13;
+    border-radius: 50%;
+    box-shadow: 5px 7px 3px -1px rgba(255,156,19,0.2);
 }

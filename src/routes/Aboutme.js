@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './css/Aboutme.module.css'
 import BorderSubtractive from '../components/GridBorder'
 import { Link } from 'react-router-dom';
-import profilepic from '../assets/profilepic.png'
+import profilepic2 from '../assets/profilepic2.png'
 
 
 const Aboutme = () => {
@@ -23,7 +23,7 @@ const Aboutme = () => {
                     I develop softwares, aim to change lives. 
                     </div>
                     <div>
-                        <img className={styles.profile} src= {profilepic} alt="profile"/>
+                        <img className={styles.profile} src= {profilepic2} alt="profile"/>
                     </div>
                 </div>
             </div>

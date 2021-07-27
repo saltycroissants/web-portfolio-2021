@@ -5,12 +5,12 @@
 }
 
 .title{
-    font-family: Acumin Pro Wide;
+    font-family: acumin-pro-wide, sans-serif;
     font-style: italic;
     font-weight: 900;
     font-size: 36px;
     line-height: 43px;
     margin-bottom : 10px;
 
-    color: #181818;
+    color: #333333;
 }

@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className = {styles.container}>
             <div className = {styles.gridContainer}>
-                    <BorderSubtractive backgroundColor = '#FFF' borderColor = '#9FBFD6'/>
+                    <BorderSubtractive backgroundColor = '#FFF' borderColor = '#FF9C13'/>
             </div>
             <div className = {styles.innerContainer}>
                 <div className= {styles.logoBox}>

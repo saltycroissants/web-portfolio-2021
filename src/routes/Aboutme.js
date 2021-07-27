@@ -10,7 +10,7 @@ const Aboutme = () => {
         <>
             <div className= {styles.container}>
                 <div className = {styles.gridContainer}>
-                        <BorderSubtractive backgroundColor ='#E7EFF5' borderColor = '#FFF'/>
+                        <BorderSubtractive backgroundColor ='#FFF' borderColor = '#FF9C13'/>
                 </div>
                 <div className = {styles.innerContainer}>
                     <Link to = "/" className= {styles.logoBox}>

@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@material-ui/core/Box';
 
 let BACKGROUND_COLOR = "background.paper";
-let BORDER_COLOR = "#9FBFD6"; 
+let BORDER_COLOR = "#FF9C13"; 
 
 const boxLine = () =>{
   let arr = [];

@@ -4,7 +4,7 @@ html,body{
     margin : 0;
     padding : 0;
     font-size: 16px;
-    background-color: #E7EFF5;
+    background-color: #FFF;
     
 }
 
@@ -26,7 +26,7 @@ html,body{
     z-index: 0;    
 }
 .logoText{
-    font-family: Acumin Pro Wide;
+    font-family: acumin-pro-wide, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -42,7 +42,7 @@ html,body{
     
 }
 .logoBox:visited{
-    color : black;
+    color : #333333;
     text-decoration: none;
 }
 .title{
@@ -51,27 +51,26 @@ html,body{
     height: 41px;
     top: 197px;
 
-    font-family: Acumin Pro Wide;
+    font-family: acumin-pro-wide, sans-serif;
     font-style: italic;
     font-weight: 900;
     font-size: 36px;
     line-height: 43px;
 
-    color: #181818;
+    color: #FF9C13;
 }
 .intro{
     position: absolute;
     width: 849px;
     height: 78px;
     top: 268px;
-
-    font-family: Acumin Pro Wide;
+    font-family: acumin-pro-wide, sans-serif;
     font-style: italic;
     font-weight: lighter;
     font-size: 36px;
     line-height: 43px;
 
-    color: #181818;
+    color: #333333;
 }
 .profile{
     position: absolute;

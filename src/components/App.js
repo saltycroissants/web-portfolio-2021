@@ -3,6 +3,7 @@ import AppRouter from "./Router";
 //import {firebaseAuth} from '../firebase'
 //import Loading from './Loading'
 import Home from '../routes/Home'
+import '../routes/css/index.css'
 
 function App() {
   //const auth = firebase.auth();
